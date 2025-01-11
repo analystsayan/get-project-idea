@@ -2,12 +2,12 @@
 
 /* Colors */
 :root {
-  --background: #0f1d0f;
-  --dark-bg: #132a13;
-  --dark-secondary: #4f772d;
-  --card-bg: #31572c81;
-  --text-light: #ecf39e;
-  --text-muted: #90a955;
+  --background: #000;
+  --dark-bg: #0d1b2a;
+  --dark-secondary: #cae9ff;
+  --card-bg: #1b263b;
+  --text-light: #e0e1dd;
+  --text-muted: #778da9;
 }
 
 html {
@@ -51,7 +51,7 @@ header h1 {
 
 .button-link {
   font-size: 1rem;
-  color: var(--text-light);
+  color: var(--card-bg);
   background: var(--dark-secondary);
   padding: .5em;
   border-radius: 30px;
@@ -66,24 +66,29 @@ header h1 {
   svg {
       height: 20px;
       width: 20px;
-      fill: var(--text-light);
+      fill: var(--card-bg);
   }
 }
 
 /* Hover effect for button */
 .button-link:hover {
   background: var(--card-bg); /* Button hover effect */
+  color: #fff;
+
+  svg {
+    fill: #fff;
+  }
 }
 
 /* Landing Page Section */
 .landing-page {
-  background-image: url('/img/bg.jpg'); /* Replace with your pattern background image URL */
+  background: var(--background); /* Replace with your pattern background image URL */
   background-size: cover;
   background-position: top;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 2.5em;
   align-items: center;
   text-align: center; /* Center text horizontally */
   height: calc(100vh - 60px);
@@ -116,7 +121,7 @@ header h1 {
 /* Action Button */
 .action-button {
   background-color: var(--dark-secondary); /* Button background color */
-  color: var(--text-light); /* Button text color */
+  color: var(--card-bg); /* Button text color */
   font-weight: 600;
   padding: 15px 30px;
   border: none;
@@ -130,6 +135,7 @@ header h1 {
 
 .action-button:hover {
   background-color: var(--dark-bg); /* Button hover effect */
+  color: #fff;
 }
 
 .filter-container {
@@ -239,13 +245,13 @@ header h1 {
 
 #project-details.active {
   display: flex; /* Show when active */
+  padding-top: 2em;
 }
 
 #details-content {
-  max-width: 90%;
-  max-height: 90%;
+  padding: 0 6em;
   overflow-y: auto; /* Allow scrolling within the content, not the whole page */
-  text-align: center;
+  text-align: left;
 }
 
 body.no-scroll, html.no-scroll {
@@ -256,8 +262,8 @@ body.no-scroll, html.no-scroll {
   position: absolute;
   top: 80px;
   left: 20px;
-  background-color: var(--card-bg);
-  color: var(--text-light);
+  background-color: var(--dark-secondary);
+  color: var(--card-bg);
   border: none;
   padding: 10px;
   cursor: pointer;
@@ -285,7 +291,7 @@ body.no-scroll, html.no-scroll {
   justify-content: space-between; /* Aligns left and right elements */
   align-items: center; /* Vertically centers the items */
   background-color: var(--dark-secondary); /* Dark background color */
-  color: var(--text-muted); /* Text color */
+  color: var(--card-bg); /* Text color */
   padding: 1em 1em; /* Padding around the footer */
 }
 
@@ -298,7 +304,7 @@ body.no-scroll, html.no-scroll {
 
 .footer .footer-left a {
   text-decoration: none;
-  color: var(--text-light);
+  color: var(--card-bg);
 }
 
 .footer .footer-left h1 {
@@ -315,16 +321,17 @@ body.no-scroll, html.no-scroll {
 }
 
 .social-link {
-  color: var(--text-light); /* Link text color */
+  color: var(--card-bg); /* Link text color */
   text-decoration: none; /* Removes underline from links */
   font-size: 1rem;
   transition: color 0.3s ease;
-  padding: .5em .3em;
-  border-radius: .5em;
+  padding: .8em .5em;
+  border-radius: 2em;
 }
 
 .social-link:hover {
   background-color: var(--dark-bg); /* Change color on hover */
+  color: var(--text-light);
 }
 
 @media (max-width: 680px) {
@@ -335,5 +342,11 @@ body.no-scroll, html.no-scroll {
 
   .footer-left {
     flex-direction: column;
+  }
+
+  #details-content {
+    padding: 0 2em;
+    overflow-y: auto; /* Allow scrolling within the content, not the whole page */
+    text-align: left;
   }
 }

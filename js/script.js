@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
             id: "Tag Analyzer and Organizer",
             name: "Tag Analyzer and Organizer",
             description:
-                "This tool allows users to track and analyze the number of tags (such as HTML, XML, or any custom tags) used in a given file or webpage. It generates a comprehensive database of tags, providing detailed insights into their usage. This data can then be accessed to generate reports, optimize content for web pages, or streamline tagging practices for SEO purposes.",
+                "This tool allows users to track and analyze the number of tags (such as HTML, XML, or any custom tags) used in a given file or webpage. It generates a comprehensive database of tags, providing detailed insights into their usage. This data can then be accessed to generate reports, optimize content for web pages, or streamline tagging practices for SEO purposes. This tool allows users to track and analyze the number of tags (such as HTML, XML, or any custom tags) used in a given file or webpage. It generates a comprehensive database of tags, providing detailed insights into their usage. This data can then be accessed to generate reports, optimize content for web pages, or streamline tagging practices for SEO purposes.",
             img: "https://plus.unsplash.com/premium_photo-1676150789920-da4613e518e3?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             category: "Web Development",
         },
@@ -162,10 +162,10 @@ document.addEventListener("DOMContentLoaded", () => {
             card.setAttribute("data-project-id", project.id);
 
             card.innerHTML = `
-    <div class="category-label">${project.category}</div>
-    <img src="${project.img}" alt="Project Image" class="card-img" />
-    <h3>${project.name}</h3>
-    `;
+                <div class="category-label">${project.category}</div>
+                    <img src="${project.img}" alt="Project Image" class="card-img" />
+                    <h3>${project.name}</h3>
+                    `;
             projectSection.appendChild(card);
         });
 
@@ -236,5 +236,94 @@ document.addEventListener("DOMContentLoaded", () => {
             "A weather app that provides real-time updates, forecasts, and weather alerts for users worldwide.",
         img: "https://plus.unsplash.com/premium_photo-1664303017917-71ebeb42343d?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         category: "Web Development",
+    });
+    addProject({
+        id: "recipe-hub",
+        name: "Recipe Hub: Your Digital Cookbook",
+        description:
+            "A comprehensive platform where users can explore a vast collection of recipes from around the world. Users can upload their own recipes, categorize them by cuisine or meal type, and share them with the community. Advanced features include personalized meal planners, grocery lists, and filters for dietary preferences such as vegan, keto, or gluten-free.",
+        img: "https://images.unsplash.com/photo-1601315379734-425a469078de?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cmVjaXBlfGVufDB8fDB8fHww",
+        category: "Web Development",
+    });
+    
+    addProject({
+        id: "habit-tracker",
+        name: "Habit Tracker",
+        description:
+            "A web application designed to help users cultivate positive habits and break bad ones. It features a visually appealing interface with streak trackers, motivational quotes, and gamification elements. Users can set goals, receive daily reminders, and monitor their progress through detailed analytics and charts.",
+        img: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        category: "Productivity",
+    });
+    
+    addProject({
+        id: "virtual-art-gallery",
+        name: "Virtual Art Gallery",
+        description:
+            "An innovative platform for artists and art lovers, featuring a 3D virtual gallery to showcase digital and traditional artworks. Users can interact with the gallery by zooming into paintings, reading detailed descriptions, and exploring artist biographies. Includes features like a virtual auction system and online purchasing options.",
+        img: "https://images.unsplash.com/photo-1578301978018-3005759f48f7?q=80&w=2044&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        category: "Arts & Culture",
+    });
+    
+    addProject({
+        id: "language-exchange",
+        name: "Language Exchange Platform",
+        description:
+            "A social platform connecting users from different countries to practice languages with each other. Features include text, voice, and video chat options, along with a real-time translation tool and language-specific exercises. Gamified elements like badges and leaderboards keep users motivated to learn.",
+        img: "https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        category: "Education",
+    });
+    
+    addProject({
+        id: "pet-adoption",
+        name: "Pet Adoption Website",
+        description:
+            "A platform that bridges the gap between animal shelters and potential adopters. Users can browse profiles of available pets, filter by species, age, and location, and contact shelters directly. The platform includes a blog section with tips on pet care, training, and adoption success stories.",
+        img: "https://images.unsplash.com/photo-1543206890-69843998edd0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        category: "Social Good",
+    });
+    
+    addProject({
+        id: "freelancer-portfolio",
+        name: "Freelancer Portfolio Builder",
+        description:
+            "An intuitive tool for freelancers to create and manage stunning online portfolios. Includes customizable templates, an integrated project showcase, and analytics to track profile views and client engagement. Users can also receive client reviews and manage their work history on the platform.",
+        img: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        category: "Business",
+    });
+    
+    addProject({
+        id: "travel-planner",
+        name: "Travel Planner App",
+        description:
+            "A feature-rich travel planning application allowing users to create detailed itineraries. Includes integration with Google Maps for route planning, hotel and flight booking options, and recommendations for local attractions. Users can save itineraries, share them with friends, and receive notifications for upcoming trips.",
+        img: "https://images.unsplash.com/photo-1522199710521-72d69614c702?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        category: "Travel",
+    });
+    
+    addProject({
+        id: "fitness-dashboard",
+        name: "Fitness Dashboard",
+        description:
+            "An all-in-one fitness dashboard that syncs with wearable devices to track health metrics such as heart rate, steps, and calories burned. Features personalized workout recommendations, goal tracking, and community challenges to encourage healthy competition among users.",
+        img: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        category: "Health & Wellness",
+    });
+    
+    addProject({
+        id: "event-organizer",
+        name: "Event Organizer Web App",
+        description:
+            "An online platform for planning and managing events. Users can create events, manage guest lists, send invites, and track RSVPs. Includes features for scheduling, ticket sales, and integration with social media for promotions.",
+        img: "https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        category: "Event Management",
+    });
+    
+    addProject({
+        id: "eco-friendly-tips",
+        name: "Eco-Friendly Living Tips",
+        description:
+            "A web app providing actionable tips and resources for sustainable living. Features include eco-friendly product recommendations, a blog with green lifestyle ideas, and a community forum for sharing experiences and advice on reducing environmental impact.",
+        img: "https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        category: "Sustainability",
     });
 });
